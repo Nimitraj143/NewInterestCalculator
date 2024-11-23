@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interest Calculator</h1>
+
+        <form id="interest-form">
+            <div>
+                <label for="principal">Principal:</label>
+                <input type="number" id="principal" required>
+            </div>
+            <div>
+                <label for="rate">Interest Rate (% per annum):</label>
+                <input type="number" id="rate" required>
+            </div>
+
+            <!-- New Date Inputs -->
+            <div>
+                <label for="issued-date">Date of Issue:</label>
+                <input type="date" id="issued-date" required>
+            </div>
+
+            <div>
+                <label for="return-date">Date of Return:</label>
+                <input type="date" id="return-date" required>
+            </div>
+
+            <button type="submit">Calculate Interest</button>
+        </form>
+
+        <div class="result">
+            <h3>Interest Calculation:</h3>
+            <p>Issued on: <span id="issued-output"></span></p>
+            <p>Return on: <span id="return-output"></span></p>
+            <p>Total Interest: <span id="interest-output"></span></p>
+            <!-- New section for Final Amount -->
+            <p>Final Amount: <span id="final-amount-output"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
